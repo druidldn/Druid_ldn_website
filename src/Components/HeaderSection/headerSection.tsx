@@ -6,9 +6,9 @@ export default function HeaderSection() {
   return (
     <>
         <StyledIcons>
-            <StyledLink to="/" ><img src={NavIcon} alt='Lgog' /></StyledLink>
-              <StyledImage  src={DruidLogo} alt='Lgog' />
-            <StyledLink to="/"><img src={NavIcon} alt='Lgog' /></StyledLink>
+            <StyledLink to="/" ><img src={NavIcon} alt='Druid home' /></StyledLink>
+              <StyledImage  src={DruidLogo} alt='Druid' />
+            <StyledLink to="/"><img src={NavIcon} alt='Druid home' /></StyledLink>
         </StyledIcons>
 
     </>

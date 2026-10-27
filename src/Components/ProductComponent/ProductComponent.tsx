@@ -8,7 +8,8 @@ import {
 
 type Item = {
   id: number;
-  company: any;
+  name: string;
+  company?: string;
   details?: string;
   dimensions?: string;
   cost?: string;
@@ -56,16 +57,20 @@ export default function ProductComponent({ items }: ProductComponentProps) {
                 .filter(Boolean)
                 .map((img: any) =>
                   typeof img === 'string'
-                    ? { src: img, alt: item.company }
-                    : { src: img.src ?? img.url, alt: img.alt || item.company }
+                    ? { src: img, alt: `${item.name} build` }
+                    : { src: img.src ?? img.url, alt: img.alt || `${item.name} build` }
                 )
                 .filter((x: any) => !!x.src)
                 .slice(0, 3)
             : [];
 
           return (
-            <StyledCard key={item.id} hasdetails={hasdetails}>
-              <StyledTitle> <img alt={item.company} src={item.company} /></StyledTitle>
+            <StyledCard key={item.id} $hasdetails={hasdetails}>
+              <StyledTitle>
+                {item.company
+                  ? <img alt={item.name} src={item.company} />
+                  : <span>{item.name}</span>}
+              </StyledTitle>
               <StyledDetails>{item.details}</StyledDetails>
               {item.dimensions && (
                 <>
@@ -80,7 +85,7 @@ export default function ProductComponent({ items }: ProductComponentProps) {
                     <RowImg
                       key={i}
                       src={img.src}
-                      alt={img.alt || `${item.company} ${i + 1}`}
+                      alt={`${img.alt} ${i + 1}`}
                       role="button"
                       tabIndex={0}
                       onClick={() => open(img.src, img.alt)}

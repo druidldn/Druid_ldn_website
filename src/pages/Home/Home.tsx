@@ -17,17 +17,13 @@ import LWTheaterLogo from '../../assets/images/Storhouse/lwtheeaterLogo.svg'
 
 
 const logos = [
-  { src: Metronomy, alt: 'Spotify' },
-  { src: GshockLogo, alt: 'Salesforce' },
-  { src: XboxLogo, alt: 'Placeholder 1' },
-  { src: LWTheaterLogo, alt: 'Placeholder 2' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg', alt: 'Apple' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg', alt: 'Google' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg', alt: 'Amazon' },
-  { src: JamesLogo, alt: 'Microsoft' },
-  { src: 'https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png', alt: 'Facebook' },
-  { src: VarsarciLogo, alt: 'Facebook' },
-  { src: VasiLogo, alt: 'IBM' },
+  { src: Metronomy, alt: 'Metronomy' },
+  { src: GshockLogo, alt: 'G-Shock' },
+  { src: XboxLogo, alt: 'Xbox' },
+  { src: LWTheaterLogo, alt: 'Storehouse Theatre' },
+  { src: JamesLogo, alt: 'James Arthur' },
+  { src: VarsarciLogo, alt: 'Versace' },
+  { src: VasiLogo, alt: 'Vashi' },
 ];
 
 const skills = [
@@ -70,7 +66,7 @@ export default function Home() {
           />
        </StyledNavMobile>
         <StyledMainImage>
-          <img src={MainImage} alt='Lgog' fetchPriority="high" />
+          <img src={MainImage} alt='The Druid team building a set in the workshop' fetchPriority="high" />
 
                     {/* <picture>
             <link rel='preload' as='image' href='../../assets/images/testworkshop.jpg' imageSizes="100vw" />

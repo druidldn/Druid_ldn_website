@@ -13,10 +13,10 @@ export const StyledIcons = styled.nav({
 });
 
 
-export const StyledCard = styled.div<{ hasdetails?: any }>(props => ({
+export const StyledCard = styled.div<{ $hasdetails?: boolean }>(props => ({
   display: 'grid',
   gridTemplateColumns: '10rem auto auto',
-  gridTemplateAreas: props.hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "none section4"`,
+  gridTemplateAreas: props.$hasdetails ? `"section1 section2 section3" "section4 section4 section4"` : `"section1 section2" "none section4"`,
   marginLeft: '5%',
   marginRight: '5%',
   paddingTop: '4rem',

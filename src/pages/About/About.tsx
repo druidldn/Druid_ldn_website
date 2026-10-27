@@ -11,12 +11,12 @@ const team = [
     {
       image: ElenaImage,
       name: 'Oscar Coakley',
-      title: 'CEO, Head of Metal work',
+      title: 'CEO, Head of Metalwork',
     },
     {
       image: MithilaImage,
       name: 'Charlie Golden',
-      title: 'CEO, Head of Wood Working',
+      title: 'CEO, Head of Woodworking',
     },
 
 ];

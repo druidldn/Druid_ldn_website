@@ -29,8 +29,8 @@ export default function Contact() {
                 Helpful Details: 
                 <ul>
 
-                  <li>Everything start with an idea</li>
-                  <li>Time line and deadlines</li>
+                  <li>Everything starts with an idea</li>
+                  <li>Timeline and deadlines</li>
                   <li>Design if possible but we can mock up on request</li>
                   <li>Budget and material choice</li>
                 </ul>
